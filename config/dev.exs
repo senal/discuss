@@ -69,7 +69,7 @@ config :phoenix, :plug_init_mode, :runtime
 # Configure your database
 config :discuss, Discuss.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "RSforever",
   database: "discuss_dev",
   hostname: "localhost",
   pool_size: 10
