@@ -18,6 +18,8 @@ defmodule DiscussWeb.Router do
 
     get "/", PageController, :index
     get "/hello", HelloController, :index
+    get "/hello/:messenger", HelloController, :show
+    get "/about", AboutController, :index
   end
 
   # Other scopes may use custom stacks.
