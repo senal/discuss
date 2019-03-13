@@ -20,6 +20,8 @@ defmodule DiscussWeb.Router do
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
     get "/about", AboutController, :index
+    resources "/user", UserController, except: [:delete, :update]
+    
   end
 
   # Other scopes may use custom stacks.
